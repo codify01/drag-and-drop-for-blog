@@ -1,0 +1,88 @@
+{
+   "users" : 
+    [
+        {
+            "id":"1",
+            "name":"amole"
+        },
+        {
+            "id":"2",
+            "name":"uthman"
+        },
+        {
+            "id":"3",
+            "name":"seun"
+        }
+    ],
+
+    "post": [
+		{
+			"featuredImage":"",
+			"exerpt":"",
+			"tableOfContent":[	],
+			"faq":[],
+			"refrences":[],
+			"postContent":[
+				{
+					"type": "Text block",
+					"content":
+						"Starting a family is a really big step. Subsequently telling your partner about your pregnancy is also a major moment. It is a time filled with various emotions, from joy to nervousness. Whether the pregnancy was planned or unexpected, having this conversation requires thoughtfulness, openness, and support from both of you. All in all, this does not have to be a boring and exhausting endeavour. There are different ways you can share the big news with your partner whilst making core, fun memories out of it!"
+				},
+				{
+					"type": "Green accordion",
+					"content": [
+						{ "title": "'Accordion Title 1', details: 'Details for accordion 1'" },
+						{ "title": "'Accordion Title 2', details: 'Details for accordion 2'" }
+					]
+				},
+				{
+					"type": "Text block",
+					"content":
+						"Starting a family is a really big step. Subsequently telling your partner about your pregnancy is also a major moment. It is a time filled with various emotions, from joy to nervousness. Whether the pregnancy was planned or unexpected, having this conversation requires thoughtfulness, openness, and support from both of you. All in all, this does not have to be a boring and exhausting endeavour. There are different ways you can share the big news with your partner whilst making core, fun memories out of it!"
+				},
+				{
+					"type": "Accordion with image",
+					"content": [
+						{
+							"title": "'Image Accordion 1",
+							"details": "'Details with image 1",
+							"image": "featured"
+						}
+					]
+				}
+			],
+			"category":""	
+		}
+	],
+
+	"postContent":[
+				{
+					"type": "Text block",
+					"content":
+						"Starting a family is a really big step. Subsequently telling your partner about your pregnancy is also a major moment. It is a time filled with various emotions, from joy to nervousness. Whether the pregnancy was planned or unexpected, having this conversation requires thoughtfulness, openness, and support from both of you. All in all, this does not have to be a boring and exhausting endeavour. There are different ways you can share the big news with your partner whilst making core, fun memories out of it!"
+				},
+				{
+					"type": "Green accordion",
+					"content": [
+						{ "title": "'Accordion Title 1', details: 'Details for accordion 1'" },
+						{ "title": "'Accordion Title 2', details: 'Details for accordion 2'" }
+					]
+				},
+				{
+					"type": "Text block",
+					"content":
+						"Starting a family is a really big step. Subsequently telling your partner about your pregnancy is also a major moment. It is a time filled with various emotions, from joy to nervousness. Whether the pregnancy was planned or unexpected, having this conversation requires thoughtfulness, openness, and support from both of you. All in all, this does not have to be a boring and exhausting endeavour. There are different ways you can share the big news with your partner whilst making core, fun memories out of it!"
+				},
+				{
+					"type": "Accordion with image",
+					"content": [
+						{
+							"title": "'Image Accordion 1",
+							"details": "'Details with image 1",
+							"image": "featured"
+						}
+					]
+				}
+			]
+   
+}  

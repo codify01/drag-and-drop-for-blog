@@ -63,7 +63,7 @@ const BlogEditor = () => {
 
     return (
         <div className="flex flex-col h-screen">
-            <div className="w-full bg-gray-800 text-white p-4 flex items-center justify-between">
+            <div className="w-full bg-gray-800 text-white p-4 flex items-center justify-between h-20">
                 <div>
                     <button className="mr-4 bg-blue-600 px-4 py-2 rounded" onClick={handleSave}>Save</button>
                     <button className="mr-4 bg-blue-600 px-4 py-2 rounded">Preview</button>
@@ -75,7 +75,7 @@ const BlogEditor = () => {
                 </div>
             </div>
 
-            <div className="flex flex-1 overflow-hidden">
+            <div className="flex flex-1 h-80">
                 <div className="w-1/4 bg-gray-100 p-4 overflow-y-auto">
                     <h3 className="font-bold mb-4">Components Library</h3>
                     {blockList.map((component) => (
@@ -93,14 +93,18 @@ const BlogEditor = () => {
                     ))}
                 </div>
 
+                <div className='flex-1 bg-gray-50 p-6 overflow-y-auto'>
+                    <h3 className="text-xl font-bold mb-4">Blog Post Sections</h3>
+                    <div>
+                        {/* <Section sectionType={'Text Block'}/> */}
+                    </div>
                 <div
-                    className="flex-1 bg-gray-50 p-6 overflow-y-auto"
+                    className="w-full p-3 pb-20 bg-gray-300 overflow-y-auto h-[80%]"
                     onDrop={handleDrop}
                     onDragOver={allowDrop}
                 >
-                    <h3 className="text-xl font-bold mb-4">Blog Post Sections</h3>
                     {sections.length === 0 && (
-                        <p className="text-gray-400">Drag components here to start building your post...</p>
+                        <p className="text-gray-400 text-center">Drag components here to start building your post...</p>
                     )}
                     <div className="space-y-4">
                         {sections.map((section, index) => (
@@ -113,7 +117,7 @@ const BlogEditor = () => {
                                 onDragLeave={() => setDraggingOverIndex(null)}
                                 className={draggingOverIndex === index ? "bg-gray-200" : ""}
                             >
-                                <Section 
+                                <Section
                                     sectionType={section.type} 
                                     content={section.content}
                                     onContentChange={(newContent) => handleContentChange(index, newContent)}
@@ -123,6 +127,8 @@ const BlogEditor = () => {
                         ))}
                     </div>
                 </div>
+                </div>    
+                
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-import parse from 'html-react-parser';
+import parse from 'html-react-parser';  
 
 const MyEditor = ({ children, action }) => {
   const [editorContent, setEditorContent] = useState(children || '');
@@ -47,7 +47,7 @@ const MyEditor = ({ children, action }) => {
         Save Content
       </button> */}
 
-      <div>
+      <div className='pt-20'>
         <h2>Content Output:</h2>
         <div className="prose">
           {parse(editorContent)}
